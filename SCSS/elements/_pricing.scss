@@ -1,0 +1,114 @@
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @include mobile {
+        max-width: 0 50px;
+        flex-direction: column;
+    }
+}
+
+.pricing-card {
+    width: 372px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+    justify-content: space-around;
+    position: relative;
+
+    @include mobile {
+        flex-direction: row;
+        margin: 20px 0
+    }
+
+    &-header {
+        @include mobile {
+            align-self: center;
+        }
+    }
+
+    &-big {
+        width: 405px;
+        padding: 50px 0;
+        border: 1px solid #07ACE6;
+    }
+
+    &-green {
+        border: 1px solid #55DFB4;
+    }
+
+    &-price {
+        font-size: 46px;
+        letter-spacing: 0px;
+        color: #FB3B64;
+        text-align: center;
+        line-height: 64px;
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &-green,
+        &-red {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        @include mobile {
+            align-items: flex-start;
+        }
+
+    }
+
+    &-price-blue {
+
+        color: #07ACE6
+    }
+
+    &-price-green {
+        color: #55DFB4
+    }
+
+    &-button {
+        position: absolute;
+        bottom: -5px;
+        left: 35%;
+
+        a {
+            background: #EB476E 0% 0% no-repeat padding-box;
+            border-radius: 23px;
+            padding: 9px 38px
+        }
+
+    }
+
+    h3 {
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: #13253B;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+
+
+
+.button-green a {
+    background-color: #55DFB4;
+}
+
+.button-blue a {
+    background-color: #07ACE6;
+}

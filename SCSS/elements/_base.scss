@@ -1,0 +1,30 @@
+@use "sass:map";
+
+h1,
+h2,
+h3,
+p {
+    font-family: $fontOpenSans;
+    text-align: center;
+
+}
+
+body {
+    font-family: $fontOpenSans;
+    color: map-get($map: $colors, $key: color-black)
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+    padding: 15px;
+
+    @media (max-width:1352px) {
+        width: 100%;
+
+    }
+}

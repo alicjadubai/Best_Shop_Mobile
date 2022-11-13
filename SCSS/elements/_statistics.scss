@@ -1,0 +1,74 @@
+h2 {
+    font-family: $fontRaleway, sans-serif;
+    font-size: 2.25rem;
+}
+
+.statistics {
+    padding-top: 8rem;
+}
+
+.statistcs__cards {
+    margin: 8rem 0;
+
+    @media (min-width: 944px) {
+
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+}
+
+
+
+.statistics__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0;
+
+
+    h3 {
+        font-family: $fontRaleway;
+        font-size: 1.5rem
+    }
+
+    p {
+        color: map-get($map: $colors, $key: color-grey);
+        margin-top: 2rem;
+        font-size: 1.1rem;
+
+    }
+
+    span {
+        align-self: center;
+    }
+
+    &__red,
+    &__blue,
+    &__green {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+    }
+
+    &__red {
+        background: #FB3B64 0% 0% no-repeat padding-box;
+    }
+
+    &__blue {
+        background: #08A6E4 0% 0% no-repeat padding-box;
+    }
+
+    &__green {
+        background: green 0% 0% no-repeat padding-box;
+    }
+
+    img {
+        position: absolute;
+        top: 0.5rem;
+    }
+
+}
